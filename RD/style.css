@@ -98,3 +98,17 @@ main {
 .botao:hover {
     background-color: #1d4ed8;
 }
+
+.beneficios h2{
+    align-items: center;
+}
+
+.beneficios-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    gap: 30px;
+    padding: 10px 10px;
+}
