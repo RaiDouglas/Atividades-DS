@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #222;
+    background-color: #f5f7fa;
+}
+
+header {
+    background-color: #172554;
+    color: white;
+    padding: 2px 8%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.logo-area img {
+    width: 70px;
+    border-radius: 10px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    gap: 20px
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #a8a8a9;
+}
+
+main {
+    width: 80%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 10px;
+    gap: 30px;
+    padding: 10px 10px;
+}
+
+.hero-content {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.hero h2 {
+    margin-top: 0;
+}
+
+.hero p {
+    line-height: 1.6;
+}
+
+.hero img {
+    width: 45%;
+    border-radius: 10px;
+}
+
+.botao {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 20px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.botao:hover {
+    background-color: #1d4ed8;
+}
