@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f6f8;
+    color: #101820;
+}
+
+.cabecalho {
+    background-color: #101820;
+    color: white;
+    min-height: 100px;
+    padding: 20px 6%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.logo img {
+    width: 220px;
+    height: auto;
+    display: block;
+    object-fit: contain;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    text-decoration: none;
+    color: white;
+}
+
+.logo > i {
+    font-size: 38px;
+    color: #b7f34a;
+}
+
+.logo h1 {
+    font-size: 25px;
+    letter-spacing: 2px;
+}
+
+.logo span {
+    font-size: 10px;
+    color: #b7f34a;
+    letter-spacing: 1px;
+}
+
+.pesquisa {
+    display: flex;
+    width: 40%;
+    max-width: 450px;
+    background-color: white;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.pesquisa input {
+    flex: 1;
+    min-width: 0;
+    padding: 13px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.pesquisa button {
+    border: none;
+    padding: 0 18px;
+    background-color: #b7f34a;
+    cursor: pointer;
+    font-size: 17px;
+}
+
+.menu {
+    background-color: #1c2a36;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 45px;
+    padding: 17px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #b7f34a;
+}
+
+.destaque {
+    min-height: 350px;
+    padding: 80px 8%;
+    background-color: linear-gradient(120deg, #101820, #304452);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 20px;
+}
+
+.destaque h2 {
+    font-size: 42px;
+    color: #b7f34a;
+}
+
+.destaque p {
+    color: #1c2a36;
+}
+
+.botao {
+    display: inline-block;
+    background-color: #b7f34a;
+    color: #101820;
+    padding: 14px 24px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.botao:hover {
+    background-color: #9ccf3e;
+    transform: translateY(-2px);
+}
