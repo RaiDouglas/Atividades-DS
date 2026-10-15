@@ -8,7 +8,7 @@
 </head>
 <body>
     <header class="cabecalho">
-        <a href="#" class="logo">
+        <a href="index.html" class="logo">
             <img src="img/download.png" alt="logo Spmax">
             <i class="fa-solid fa-bolt"></i>
             <div>
@@ -18,8 +18,10 @@
         </a>
 
         <div class="pesquisa">
-            <input type="text" placeholder="Buscar produtos...">
-            <button aria-label="pesquisa">
+            <input type="search" id="campoPesquisa" placeholder="Buscar produtos..." 
+                    aria-label="Buscar produtos">
+
+            <button id="btnPesquisar" aria-label="pesquisa">
                 <i class="fa-solid fa-magnifyinf-glass"></i>
 
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
@@ -31,23 +33,97 @@
             </button>
         </div>
 
+        <button class="botao-carrinho" id="abrirCarrinho">
+            Carrinho
+            <span id="quantidadeCarrinho">0</span>
+
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" 
+                fill="currentColor" class="bi bi-cart" viewBox="0 0 16 16">
+                <path d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 
+                .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 
+                1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2"/>
+            </svg>
+
+        </button>
+
     </header>
 
     <nav class="menu">
-        <a href="#">Inicio</a>
-        <a href="#">Masculino</a>
-        <a href="#">Feminino</a>
-        <a href="#">Calçados</a>
-        <a href="#">Acessórios</a>
+        <a href="#inicio">Inicio</a>
+        <a href="#produtos">Todos os Produtos</a>
+        <a href="#produtos">Roupas</a>
+        <a href="#produtos">Masculino</a>
+        <a href="#produtos">Feminino</a>
+        <a href="#produtos">Calçados</a>
+        <a href="#produtos">Acessórios</a>
     </nav>
 
     <main>
         <section class="destaque">
             <h2>SUPERE SEUS LIMITES</h2>
-            <p>Encontre os melhores produtos para sua jornada esportiva.</p>
-            <a href="#" class="botao">VER PRODUTOS</a>
+            <p>Encontre os melhores produtos para sua 
+                jornada esportiva.</p>
+            <a href="#produtos" class="botao-destaque">VER PRODUTOS</a>
         </section>
+
+        <section class="secao-produtos" id="produtos">
+
+            <div class="titulo-secao">
+                <div>
+                    <p class="subtitulo">NOSSA LOJA</p>
+                    <h2>Produtos esportivos</h2>
+                </div>
+
+                <select id="filtroCategoria">
+                    <option value="Todos">Todas as categorias</option>
+                    <option value="Calçados">Calçados</option>
+                    <option value="Acessórios">Acessórios</option>
+                    <option value="Roupas">Roupas</option>
+                    <option value="Equipamentos">Equipamentos</option>
+                </select>
+            </div>
+
+            <div class="grade-produtos" id="listaProdutos">
+            </div>
+
+            <p id="mensagemVazia" hidden>
+                Nenhum produto encontrado.
+            </p>
+
+        </section>
+
     </main>
+
+    <dialog id="modalCarrinho" class="modal-carrinho">
+
+        <div class="topo-carrinho">
+            <h2>Meu carrinho</h2>
+
+            <button id="frcharCarrinho" aria-label="Fechar">
+                X
+            </button>
+        </div>
+
+        <div id="itensCarrinho"></div>
+
+        <div class="total-carrinho">
+            <strong>
+                Total:
+                <span id="toatlCarrinho">R$ 0,00</span>
+            </strong>
+
+            <button id="limparCarrinho">
+                Limpar carrinho
+            </button>
+        </div>
+
+    </dialog>
+
+    <footer>
+        <p>© 2026 SoportMax - Supere seus limites</p>
+    </footer>
+
+    <script src="Script.js"></script>
 
 </body>
 </html>

@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #f4f6f8;
@@ -119,7 +123,7 @@ body {
     color: #1c2a36;
 }
 
-.botao {
+.botao-destaque {
     display: inline-block;
     background-color: #b7f34a;
     color: #101820;
@@ -130,7 +134,96 @@ body {
     transition: 0.3s;
 }
 
-.botao:hover {
+.botao-destaque:hover {
     background-color: #9ccf3e;
     transform: translateY(-2px);
+}
+
+.botao-carrinho {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 15px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid #52606b;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+.botao-carrinho:hover {
+    border-color: #b7f34a;
+    color: #b7f34a;
+}
+
+#quantidadeCarrinho {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    background-color: #b7f34a;
+    color: #101820;
+    font-weight: bold;
+}
+
+.menu {
+    background-color: #1c2a36;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 40px;
+    padding: 18px;
+}
+
+.menu a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.3s;
+}
+
+.menu a:hover {
+    color: #b7f34a;
+}
+
+.destaque {
+    min-height: 350px;
+    padding: 60px 8%;
+    display: flex;
+    align-items: center;
+    background: 
+        radial-gradient(
+            ellipse at 85% 50%,
+            #36533b 0%,
+            transition 45%
+        ),
+        linear-gradient(120deg, #101820, #262832);
+
+    color: white;
+}
+
+.subtitulo {
+    color: #598a1c;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.destaque .subtitulo {
+    color: #b7f34a;
+}
+
+.secao-produtos {
+    padding: 55px 6%;
+}
+
+.titulo-secao {
+    display: flex;
+    justify-content: space-between;
 }
